@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="168.431">
+    <testcase classname="feature to test sliders" name="check Home Page with three Sliders only" time="23.53">
+        <system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Home page with three Arrivals only" time="20.544">
+        <system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Images in Arrivals should navigate" time="26.319">
+        <system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+When Now click the image in the Arrivals....................................passed
+Then Test whether it is navigating to next page where the user can add that book into his basket..passed
+And Image should be clickable and shoul navigate to next page where user can add that book to his basket.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Arrivals-Images-Description" time="18.832">
+        <system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+When Now click the image in the Arrivals....................................passed
+Then Test whether it is navigating to next page where the user can add that book into his basket..passed
+And Image should be clickable and shoul navigate to next page where user can add that book to his basket.passed
+When Click on Description tab for the book you clicked on...................passed
+Then There should be a description regarding that book the user clicked on..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Add to Basket-Items" time="25.41">
+        <failure message="Use assertEquals(expected, actual, delta) to compare floating-point numbers" type="java.lang.AssertionError"><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+When Now click the image in the Arrivals....................................passed
+Then Test whether it is navigating to next page where the user can add that book into his basket..passed
+And Image should be clickable and shoul navigate to next page where user can add that book to his basket.passed
+When Click on the Add To Basket button which adds that book to your basket..passed
+Then User can view that Book in the Menu item with price....................failed
+When Now click on Item link which navigates to proceed to check out page....skipped
+Then User can click on the Item link in menu item after adding the book in to the basket which leads to the check out page.skipped
+
+StackTrace:
+java.lang.AssertionError: Use assertEquals(expected, actual, delta) to compare floating-point numbers
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertEquals(Assert.java:669)
+	at org.junit.Assert.assertEquals(Assert.java:658)
+	at StepDefinitions.HomePageStep.user_can_view_that_book_in_the_menu_item_with_price(HomePageStep.java:117)
+	at ✽.User can view that Book in the Menu item with price.(file:///C:/Users/Admin/eclipse-workspace/HomePage/src/test/resources/Features/Sliders.feature:55)
+]]></failure>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Add to Basket-Items-Coupon value &lt;450" time="25.31">
+        <failure message="Use assertEquals(expected, actual, delta) to compare floating-point numbers" type="java.lang.AssertionError"><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+When Now click the image in the Arrivals....................................passed
+Then Test whether it is navigating to next page where the user can add that book into his basket..passed
+And Image should be clickable and shoul navigate to next page where user can add that book to his basket.passed
+When Click on the Add To Basket button which adds that book to your basket..passed
+Then User can view that Book in the Menu item with price....................failed
+When Now click on Item link which navigates to proceed to check out page....skipped
+When Enter the Coupon code as "krishnasakinala" to get 50rps off on the total..skipped
+Then User can not able to apply coupon by entering �krishnasakinala� in the coupon textbox which give 50rps off on the total price because the coupon is applicable for the book price > 450 rps.skipped
+
+StackTrace:
+java.lang.AssertionError: Use assertEquals(expected, actual, delta) to compare floating-point numbers
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertEquals(Assert.java:669)
+	at org.junit.Assert.assertEquals(Assert.java:658)
+	at StepDefinitions.HomePageStep.user_can_view_that_book_in_the_menu_item_with_price(HomePageStep.java:117)
+	at ✽.User can view that Book in the Menu item with price.(file:///C:/Users/Admin/eclipse-workspace/HomePage/src/test/resources/Features/Sliders.feature:70)
+]]></failure>
+    </testcase>
+    <testcase classname="feature to test sliders" name="Add to Basket-Items-Remove book" time="27.391">
+        <failure message="Use assertEquals(expected, actual, delta) to compare floating-point numbers" type="java.lang.AssertionError"><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Now click on Home menu button...........................................passed
+And Test whether the Home page has Three Arrivals only......................passed
+Then The Home page must contains only three Arrivals........................passed
+When Now click the image in the Arrivals....................................passed
+Then Test whether it is navigating to next page where the user can add that book into his basket..passed
+And Image should be clickable and shoul navigate to next page where user can add that book to his basket.passed
+When Click on the Add To Basket button which adds that book to your basket..passed
+Then User can view that Book in the Menu item with price....................failed
+When Now click on Item link which navigates to proceed to check out page....skipped
+When Enter the Coupon code as "krishnasakinala" to get 50rps off on the total..skipped
+Then User can not able to apply coupon by entering �krishnasakinala� in the coupon textbox which give 50rps off on the total price because the coupon is applicable for the book price > 450 rps.skipped
+
+StackTrace:
+java.lang.AssertionError: Use assertEquals(expected, actual, delta) to compare floating-point numbers
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertEquals(Assert.java:669)
+	at org.junit.Assert.assertEquals(Assert.java:658)
+	at StepDefinitions.HomePageStep.user_can_view_that_book_in_the_menu_item_with_price(HomePageStep.java:117)
+	at ✽.User can view that Book in the Menu item with price.(file:///C:/Users/Admin/eclipse-workspace/HomePage/src/test/resources/Features/Sliders.feature:86)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="62.412">
+<testcase classname="check function of shop" name="shop-filter by price functionaly" time="29.163">
+<system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Adjust the filter by price between 150 to 450 rps.......................passed
+And Now click on Filter button..............................................passed
+Then User can view books only between 150 to 450 rps price..................passed
+]]></system-out>
+</testcase>
+<testcase classname="check function of shop" name="shop-filter by price functionaly 2" time="32.909">
+<system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on Shop Menu......................................................passed
+And Click any of the product links available in the product category........passed
+Then Now user can view only that particular product.........................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="52.368">
+    <testcase classname="Register an account" name="Successfully registered an account" time="15.394">
+        <system-out><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on My Account Menu................................................passed
+And Enter registered Email Address with "ngoclong09.thaihoa@gmail.com" in Email-Address textbox.passed
+And Enter your own password with "NgocLong!@#$%^&*(" in password textbox....passed
+And Click on Register button................................................passed
+Then User will be registered successfully and will be navigated to the Home page.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register an account" name="Registration with invalid Email-id" time="19.954">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Open the browser......................................................passed
+When Enter the URL "http://practice.automationtesting.in/"..................passed
+And Click on My Account Menu................................................passed
+And Enter invalid Email Address with "!$$#!$%&@gmail.com" in Email-Address textbox.passed
+And Enter your own password with "NgocLong!@#$%^&*(" in password textbox....passed
+And Click on Register button................................................passed
+Then Registration must fail with a warning message(ie You must enter a valid email address).undefined
+]]></failure>
+    </testcase>
+    <testcase classname="Register an account" name="Registration with empty Email-id"/>
+</testsuite>
